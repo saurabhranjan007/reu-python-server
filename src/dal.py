@@ -17,7 +17,7 @@ class ListSummary(BaseModel):
     def from_doc(doc) -> "ListSummary":
         return ListSummary(
             id=str(doc["_id"]), 
-            namme=doc["name"],
+            name=doc["name"],
             item_count=doc["item_count"], 
         )
         
